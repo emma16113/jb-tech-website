@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>J Beulah Tech | Building the Future of Mining Intelligence</title>
+
+<meta name="description"
+content="Artificial intelligence, geotechnical expertise, and decades of project experience helping mining companies discover, evaluate, and develop projects more effectively.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Inter, Segoe UI, sans-serif;
+    background:#F8FAFC;
+    color:#0F172A;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-bg{
+    position:absolute;
+    inset:0;
+    z-index:0;
+}
+
+.hero-bg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0.20;
+    transform:scale(1.08);
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(0,87,217,0.18),
+        transparent 40%
+    ),
+    rgba(255,255,255,.78);
+}
+
+/* ---------- BUTTONS ---------- */
+
+.primary-btn{
+    background:#0057D9;
+    color:white;
+}
+
+.primary-btn:hover{
+    background:#0046B4;
+}
+
+.secondary-btn{
+    border:1px solid #CBD5E1;
+}
+
+.secondary-btn:hover{
+    background:#F1F5F9;
+}
+
+/* ---------- STATS ---------- */
+
+.metric{
+    font-size:3rem;
+    font-weight:700;
+    color:#0057D9;
+    line-height:1;
+}
+
+/* ---------- GLASS CARD ---------- */
+
+.hero-tech-card{
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.75);
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.08);
+
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+    will-change:transform;
+}
+
+/* ---------- CONTENT ---------- */
+
+.section{
+    padding-top:7rem;
+    padding-bottom:7rem;
+}
+
+.card{
+    background:white;
+    border-radius:24px;
+    border:1px solid #E2E8F0;
+}
+
+/* ---------- DARK SECTION ---------- */
+
+.dark{
+    background:#0F172A;
+    color:white;
+}
+
+/* ---------- TIMELINE ---------- */
+
+.timeline-line{
+    height:4px;
+    background:#0057D9;
+    width:100%;
+    border-radius:999px;
+}
+
+/* ---------- ANIMATIONS ---------- */
+
+.fade-section{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade-section.visible{
+    opacity:1;
+    transform:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav class="bg-white/90 backdrop-blur sticky top-0 z-50 border-b">
+
+<div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+
+<div class="flex items-center gap-4">
+
+<img
+src="assets/jb-logo.png"
+class="h-12"
+alt="J Beulah Tech">
+
+<div>
+<div class="font-semibold">J BEULAH TECH</div>
+<div class="text-sm text-slate-500">
+Mining Intelligence & Project Management
+</div>
+</div>
+
+</div>
+
+<div class="hidden md:flex gap-8 text-sm">
+
+    <!--<a href="#technology">Technology</a>-->
+
+    <!--<a href="#project-management">Project Management</a>-->
+
+    <!--<a href="#research">Research</a>-->
+
+    <a
+    href="#contact"
+    class="primary-btn px-5 py-3 rounded-xl">
+    Book Meeting</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero min-h-screen flex items-center">
+
+<div class="hero-bg">
+
+<img
+src="assets/mine-hero.jpg"
+id="parallax-bg"
+alt="Mine">
+
+<div class="hero-overlay"></div>
+
+</div>
+
+<div class="max-w-7xl mx-auto px-8 py-24 relative z-10">
+
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+
+<div>
+
+<div class="uppercase text-blue-700 tracking-[0.3em] text-sm mb-6">
+
+A MINING INTELLIGENCE COMPANY
+
+</div>
+
+<h1 class="text-5xl lg:text-7xl font-bold leading-tight">
+
+Building the Future of
+Mining Intelligence
+
+</h1>
+
+<p class="mt-8 text-xl text-slate-700 leading-relaxed">
+
+We combine artificial intelligence,
+geotechnical expertise, and decades
+of project experience to help mining
+companies discover, evaluate, and
+develop projects more effectively.
+
+</p>
+
+<p class="mt-6 text-lg text-slate-600">
+
+From computer vision and 3D geospatial
+analysis to project delivery and technical
+advisory, we transform mining data into
+better decisions.
+
+</p>
+
+<div class="flex flex-wrap gap-4 mt-10">
+
+<a
+href="#contact"
+class="primary-btn px-8 py-4 rounded-xl">
+
+Book a Meeting
+
+</a>
+
+<a
+href="#technology"
+class="secondary-btn px-8 py-4 rounded-xl">
+
+Explore Technology
+
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<div
+class="hero-tech-card p-6 rounded-3xl"
+id="hero-card">
+
+<div
+class="uppercase text-blue-700 text-sm tracking-widest mb-4">
+
+Technology Demonstration
+
+</div>
+
+<img
+src="assets/discontinuity-detected.png"
+class="rounded-2xl w-full">
+
+<div class="mt-5">
+
+<h3 class="text-2xl font-semibold">
+
+AI-Powered Structural Interpretation
+
+</h3>
+
+<p class="mt-3 text-slate-600">
+
+Automatically identify discontinuities,
+veins, fracture networks and structural
+controls from images and point clouds.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="section bg-white">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="grid md:grid-cols-4 gap-10">
+
+<div class="fade-section">
+
+<div class="metric">
+30+
+</div>
+
+<p class="text-slate-600 mt-2">
+Years of Mining & Energy Experience
+</p>
+
+</div>
+
+<div class="fade-section">
+
+<div class="metric">
+$1B+
+</div>
+
+<p class="text-slate-600 mt-2">
+Projects Managed Across Canada and Africa
+</p>
+
+</div>
+
+<div class="fade-section">
+
+<div class="metric">
+AI
+</div>
+
+<p class="text-slate-600 mt-2">
+Research-Driven Innovation
+</p>
+
+</div>
+
+<div class="fade-section">
+
+<div class="metric">
+UBC
+</div>
+
+<p class="text-slate-600 mt-2">
+Mining Research Collaboration
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHAT WE DO -->
+
+<section id="solutions" class="section bg-slate-50">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="text-center fade-section">
+
+    <div class="uppercase tracking-widest text-blue-700 mb-4">
+        What We Do
+    </div>
+
+    <h2 class="text-5xl font-bold">
+        Mining Intelligence Across Research,
+        Technology & Project Delivery
+    </h2>
+
+    <p class="mt-6 text-xl text-slate-600 max-w-4xl mx-auto">
+
+        We combine advanced AI, mining expertise,
+        geotechnical engineering and project execution
+        to help organisations make better decisions
+        from exploration through operations.
+
+    </p>
+
+</div>
+
+<div class="grid lg:grid-cols-3 gap-8 mt-16">
+
+    <div class="card p-10 fade-section">
+
+        <div class="text-blue-700 font-semibold mb-3">
+            Mining Intelligence
+        </div>
+
+        <h3 class="text-2xl font-bold mb-5">
+            AI-Powered Technical Analysis
+        </h3>
+
+        <p class="text-slate-600">
+
+            Geological interpretation, geotechnical
+            characterisation, computer vision,
+            point-cloud analytics and digital twins.
+
+        </p>
+
+    </div>
+
+    <div class="card p-10 fade-section">
+
+        <div class="text-blue-700 font-semibold mb-3">
+            Technical Advisory
+        </div>
+
+        <h3 class="text-2xl font-bold mb-5">
+            Expert Insight
+        </h3>
+
+        <p class="text-slate-600">
+
+            Technical reviews, audits, digital
+            transformation planning, research
+            programmes and independent advisory
+            services.
+
+        </p>
+
+    </div>
+
+    <div class="card p-10 fade-section">
+
+        <div class="text-blue-700 font-semibold mb-3">
+            Project Management
+        </div>
+
+        <h3 class="text-2xl font-bold mb-5">
+            Delivery & Execution
+        </h3>
+
+        <p class="text-slate-600">
+
+            Project planning, coordination,
+            stakeholder management, technical
+            leadership and project controls for
+            mining and energy developments.
+
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LIFECYCLE -->
+
+<section class="section">
+
+<div class="max-w-6xl mx-auto px-8">
+
+<div class="text-center fade-section">
+
+<h2 class="text-5xl font-bold">
+
+Supporting Decisions Across
+The Mining Lifecycle
+
+</h2>
+
+<p class="text-slate-600 text-xl mt-4">
+
+From exploration to operations.
+
+</p>
+
+</div>
+
+<div class="mt-20">
+
+<div class="timeline-line"></div>
+
+<div class="grid md:grid-cols-5 gap-6 mt-8 text-center">
+
+<div>Exploration</div>
+<div>Resource Definition</div>
+<div>Geotechnical Characterization</div>
+<div>Project Development</div>
+<div>Operations</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TECHNOLOGY -->
+
+<section
+id="technology"
+class="section dark">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="text-center fade-section">
+
+<h2 class="text-5xl font-bold">
+
+Turning Data Into Decisions
+
+</h2>
+
+<p class="mt-5 text-slate-300 text-xl">
+
+Advanced computer vision and
+geospatial intelligence for mining.
+
+</p>
+
+</div>
+
+<div class="grid lg:grid-cols-2 gap-12 mt-20">
+
+<div class="fade-section">
+
+<img
+src="assets/discontinuity-raw.png"
+class="rounded-3xl">
+
+<h3 class="mt-5 text-xl">
+
+Input Image
+
+</h3>
+
+</div>
+
+<div class="fade-section">
+
+<img
+src="assets/discontinuity-detected.png"
+class="rounded-3xl">
+
+<h3 class="mt-5 text-xl">
+
+AI Detection Output
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT MANAGEMENT -->
+
+<section
+id="project-management"
+class="section bg-white">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+
+    <div class="fade-section">
+
+        <div class="uppercase tracking-widest text-blue-700 mb-4">
+            Project Management
+        </div>
+
+        <h2 class="text-5xl font-bold">
+
+            Delivering Projects
+            With Confidence
+
+        </h2>
+
+        <p class="mt-8 text-xl text-slate-600 leading-relaxed">
+
+            Beyond technology, our team brings
+            decades of project leadership experience
+            across mining, oil & gas, infrastructure,
+            research and innovation initiatives.
+
+        </p>
+
+        <p class="mt-6 text-lg text-slate-500">
+
+            With experience supporting more than
+            $80 billion in projects across Canada, Africa and the US
+            we help organisations move from technical
+            understanding to successful delivery.
+
+        </p>
+
+    </div>
+
+    <div class="card p-10 fade-section">
+
+        <h3 class="text-2xl font-bold mb-8">
+
+            Areas of Support
+
+        </h3>
+
+        <div class="grid gap-4">
+
+            <div>✓ Project Planning & Coordination</div>
+
+            <div>✓ Technical Leadership</div>
+
+            <div>✓ Project Controls</div>
+
+            <div>✓ Risk Management</div>
+
+            <div>✓ Owner's Representative Support</div>
+
+            <div>✓ Technical Reviews</div>
+
+            <div>✓ Stakeholder Coordination</div>
+
+            <div>✓ Technical Reports & Documentation</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RESEARCH -->
+
+<section class="section">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<div class="fade-section">
+
+<h2 class="text-5xl font-bold">
+
+Areas of Innovation
+
+</h2>
+
+</div>
+
+<div class="grid lg:grid-cols-4 gap-8 mt-16">
+
+<div class="card p-8 fade-section">
+
+<h3 class="text-xl font-semibold">
+Geological Intelligence
+</h3>
+
+<p class="mt-4 text-slate-600">
+
+Core imagery interpretation,
+lithology classification,
+and geological analytics.
+
+</p>
+
+</div>
+
+<div class="card p-8 fade-section">
+
+<h3 class="text-xl font-semibold">
+Geotechnical Intelligence
+</h3>
+
+<p class="mt-4 text-slate-600">
+
+Automatic detection of
+discontinuities, veins and fractures.
+
+</p>
+
+</div>
+
+<div class="card p-8 fade-section">
+
+<h3 class="text-xl font-semibold">
+Spatial Intelligence
+</h3>
+
+<p class="mt-4 text-slate-600">
+
+Point clouds, digital twins,
+and 3D modelling.
+
+</p>
+
+</div>
+
+<div class="card p-8 fade-section">
+
+<h3 class="text-xl font-semibold">
+Mining AI Systems
+</h3>
+
+<p class="mt-4 text-slate-600">
+
+AI solutions built for
+real-world mining workflows.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- POSITIONING -->
+
+<section class="section bg-slate-100">
+
+<div class="max-w-5xl mx-auto px-8 text-center fade-section">
+
+<h2 class="text-5xl font-bold">
+
+More Than Software.
+More Than Consulting.
+
+</h2>
+
+<p class="mt-8 text-xl text-slate-600 leading-relaxed">
+
+J Beulah Tech works alongside mining
+companies as a technology developer,
+technical advisor, and research partner.
+We help organizations deploy practical AI
+that creates measurable value across the
+entire mining lifecycle.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- DELIVERY -->
+
+<section class="section">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<h2 class="text-5xl font-bold mb-16 fade-section">
+
+Research. Technology. Delivery.
+
+</h2>
+
+<div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+<div class="card p-6 fade-section">AI Strategy</div>
+<div class="card p-6 fade-section">Custom Development</div>
+<div class="card p-6 fade-section">Project Management</div>
+<div class="card p-6 fade-section">Technical Reviews</div>
+<div class="card p-6 fade-section">SR&ED Support</div>
+<div class="card p-6 fade-section">Site Support</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section
+id="contact"
+class="section dark">
+
+<div class="max-w-4xl mx-auto px-8 text-center">
+
+<h2 class="text-6xl font-bold">
+
+Let's Build The Future
+Of Mining Intelligence
+
+</h2>
+
+<p class="text-xl text-slate-300 mt-8">
+
+Research collaborations,
+custom technology development,
+AI initiatives and project advisory.
+
+</p>
+
+<div class="mt-12">
+
+<!-- CALENDLY EMBED -->
+
+<div
+class="calendly-inline-widget rounded-3xl overflow-hidden"
+data-url="https://calendly.com/jbeulah-tech"
+style="min-width:320px;height:700px;">
+</div>
+
+<script
+src="https://assets.calendly.com/assets/external/widget.js"
+async>
+</script>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="bg-white border-t">
+
+<div class="max-w-7xl mx-auto px-8 py-12">
+
+<h3 class="font-bold text-2xl">
+
+J BEULAH TECH
+
+</h3>
+
+<p class="text-slate-500 mt-2">
+
+Mining Intelligence Company
+
+</p>
+
+<p class="text-slate-400 mt-5 max-w-3xl">
+
+J Beulah Tech develops artificial intelligence
+technologies and technical solutions for
+exploration, geotechnical engineering,
+and project development.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ANIMATIONS -->
+
+<script>
+
+/* HERO CARD FLOAT */
+
+const card =
+document.getElementById("hero-card");
+
+document.addEventListener(
+"mousemove",
+(e)=>{
+
+const x=
+(window.innerWidth/2-e.clientX)/45;
+
+const y=
+(window.innerHeight/2-e.clientY)/45;
+
+card.style.transform=
+`translate(${x}px,${y}px)`;
+
+});
+
+/* BACKGROUND PARALLAX */
+
+window.addEventListener(
+"scroll",
+()=>{
+
+const bg =
+document.getElementById("parallax-bg");
+
+const y =
+window.scrollY * .15;
+
+bg.style.transform =
+`translateY(${y}px) scale(1.08)`;
+
+});
+
+/* FADE IN */
+
+const observer =
+new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add(
+"visible"
+);
+
+}
+
+});
+
+},{threshold:0.1});
+
+document
+.querySelectorAll(".fade-section")
+.forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
