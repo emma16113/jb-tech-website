@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\priss\\Documents\\Research Work\\JBeulah Tech\\index.html"
+            "url": "file:///C:/Users/priss/Documents/Research%20Work/JBeulah%20Tech/index.html"
         }
     ]
 }
